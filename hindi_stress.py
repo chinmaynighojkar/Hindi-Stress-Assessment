@@ -5,7 +5,7 @@ import streamlit as st
 # Set up Google Sheets API credentials
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 
-creds = ServiceAccountCredentials.from_json_keyfile_name('C:\ChinmayProjects\HappiMynd\happimynd-3460553cc66f.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('happimynd-3460553cc66f.json', scope)
 client = gspread.authorize(creds)
 
 # Open the Google Sheets document by its title
